@@ -1,4 +1,4 @@
-import {INTERACTION_TYPES} from './s1-micro-interact-consts';
+import {INTERACTION_TYPES} from './interactions/s1-micro-interactions';
 import {ElementRef} from '@angular/core';
 
 export class S1MicroInteractFactory {
