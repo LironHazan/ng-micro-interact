@@ -115,6 +115,41 @@
           }
         }
       }
+    },
+    "s1-micro-interact": {
+      "projectType": "library",
+      "root": "projects/s1-micro-interact",
+      "sourceRoot": "projects/s1-micro-interact/src",
+      "prefix": "so",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/s1-micro-interact/tsconfig.lib.json",
+            "project": "projects/s1-micro-interact/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/s1-micro-interact/src/test.ts",
+            "tsConfig": "projects/s1-micro-interact/tsconfig.spec.json",
+            "karmaConfig": "projects/s1-micro-interact/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/s1-micro-interact/tsconfig.lib.json",
+              "projects/s1-micro-interact/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "s1-micro-interactions"
 }
