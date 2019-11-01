@@ -1,4 +1,7 @@
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+
 # ngMicroInteract
+Tiny Angular lib for micro interactions using web animations API.
 
 Easily add micro interactions as follows:
 
@@ -6,6 +9,17 @@ Easily add micro interactions as follows:
    Blink!
  </div>`
  
+ 
  TBD: 
-
-- All interactions should implement ng-micro-interact interface 
+ - shake
+ - fade
+ - jelly
+ - bounce
+ - tada
+ - groove
+ - swing
+ - squeeze
+ - flicker
+ - jerk
+ - blink
+ - pop

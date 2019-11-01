@@ -1,5 +1,9 @@
-import {INTERACTION_TYPES} from './interactions/ng-micro-interactions';
 import {ElementRef} from '@angular/core';
+import {Blink} from './interactions/blink';
+
+const INTERACTION_TYPES = {
+    blink: Blink
+};
 
 export class NgMicroInteractFactory {
     static setInteraction(type: string, element: ElementRef) {
