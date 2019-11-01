@@ -2,6 +2,19 @@
   display: flex;
   justify-content: center;
 }
+
+.title {
+  font-family: Lato;
+  font-weight: 400;
+  color: darkgray;
+}
+.interactions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+  padding: 2rem;
+}
 .sq {
   width: 100px;
   background: purple;
@@ -11,4 +24,5 @@
   cursor: pointer;
   padding: 1em;
   box-sizing: border-box;
+  margin: 10px;
 }
