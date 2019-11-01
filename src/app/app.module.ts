@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {S1MicroInteractModule} from '../../projects/s1-micro-interact/src/lib/s1-micro-interact.module';
+import {NgMicroInteractModule} from '../../projects/ng-micro-interact/src/lib/ng-micro-interact.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import {S1MicroInteractModule} from '../../projects/s1-micro-interact/src/lib/s1
   ],
   imports: [
     BrowserModule,
-    S1MicroInteractModule
+    NgMicroInteractModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "s1-micro-interactions": {
+    "ng-micro-interactions": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/s1-micro-interactions",
+            "outputPath": "dist/ng-micro-interactions",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "s1-micro-interactions:build"
+            "browserTarget": "ng-micro-interactions:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "s1-micro-interactions:build:production"
+              "browserTarget": "ng-micro-interactions:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "s1-micro-interactions:build"
+            "browserTarget": "ng-micro-interactions:build"
           }
         },
         "test": {
@@ -106,43 +106,43 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "s1-micro-interactions:serve"
+            "devServerTarget": "ng-micro-interactions:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "s1-micro-interactions:serve:production"
+              "devServerTarget": "ng-micro-interactions:serve:production"
             }
           }
         }
       }
     },
-    "s1-micro-interact": {
+    "ng-micro-interact": {
       "projectType": "library",
-      "root": "projects/s1-micro-interact",
-      "sourceRoot": "projects/s1-micro-interact/src",
-      "prefix": "so",
+      "root": "projects/ng-micro-interact",
+      "sourceRoot": "projects/ng-micro-interact/src",
+      "prefix": "ng",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/s1-micro-interact/tsconfig.lib.json",
-            "project": "projects/s1-micro-interact/ng-package.json"
+            "tsConfig": "projects/ng-micro-interact/tsconfig.lib.json",
+            "project": "projects/ng-micro-interact/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/s1-micro-interact/src/test.ts",
-            "tsConfig": "projects/s1-micro-interact/tsconfig.spec.json",
-            "karmaConfig": "projects/s1-micro-interact/karma.conf.js"
+            "main": "projects/ng-micro-interact/src/test.ts",
+            "tsConfig": "projects/ng-micro-interact/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-micro-interact/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/s1-micro-interact/tsconfig.lib.json",
-              "projects/s1-micro-interact/tsconfig.spec.json"
+              "projects/ng-micro-interact/tsconfig.lib.json",
+              "projects/ng-micro-interact/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -151,5 +151,5 @@
         }
       }
     }},
-  "defaultProject": "s1-micro-interactions"
+  "defaultProject": "ng-micro-interactions"
 }

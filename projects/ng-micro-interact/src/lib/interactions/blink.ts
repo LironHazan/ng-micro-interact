@@ -1,7 +1,7 @@
 import { ElementRef } from '@angular/core';
-import { S1MicroInteract } from './s1-micro-interact.interface';
+import { NgMicroInteract } from './ng-micro-interact.interface';
 
-export class Blink implements S1MicroInteract {
+export class Blink implements NgMicroInteract {
 
   start(elementRef: ElementRef) {
     const keyframes = [

@@ -1,10 +1,10 @@
 import {AfterViewInit, Directive, ElementRef, Input, Renderer2} from '@angular/core';
-import {S1MicroInteractFactory} from './s1-micro-interact-factory';
+import {NgMicroInteractFactory} from './ng-micro-interact-factory';
 
 @Directive({
-  selector: '[soMicroInteract]'
+  selector: '[ngMicroInteract]'
 })
-export class S1MicroInteractDirective implements AfterViewInit {
+export class NgMicroInteractDirective implements AfterViewInit {
 
   @Input() type;
   @Input() trigger = 'mouseover';
@@ -18,7 +18,7 @@ export class S1MicroInteractDirective implements AfterViewInit {
 
   registerEventListeners() {
     this.renderer.listen(this.el.nativeElement, this.trigger, () => {
-      S1MicroInteractFactory.setInteraction(this.type, this.el);
+      NgMicroInteractFactory.setInteraction(this.type, this.el);
     });
   }
 

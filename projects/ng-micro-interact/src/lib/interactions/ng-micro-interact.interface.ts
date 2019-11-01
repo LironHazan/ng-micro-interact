@@ -1,5 +1,5 @@
 import {ElementRef} from '@angular/core';
 
-export interface S1MicroInteract {
+export interface NgMicroInteract {
   start(el: ElementRef);
 }

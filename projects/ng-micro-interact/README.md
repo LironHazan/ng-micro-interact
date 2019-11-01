@@ -1,4 +1,4 @@
-# S1MicroInteract
+# ngMicroInteract
 
 Easily add micro interactions as follows:
 
@@ -8,4 +8,4 @@ Easily add micro interactions as follows:
  
  TBD: 
 
-- All interactions should implement s1-micro-interact interface 
+- All interactions should implement ng-micro-interact interface 
