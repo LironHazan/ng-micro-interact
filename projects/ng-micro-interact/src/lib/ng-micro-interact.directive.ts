@@ -8,7 +8,7 @@ export class NgMicroInteractDirective implements AfterViewInit {
 
   @Input() type;
   @Input() trigger = 'mouseover';
-  @Input() options;
+  @Input() options: KeyframeAnimationOptions;
 
   constructor(private el: ElementRef,
               private renderer: Renderer2) { }

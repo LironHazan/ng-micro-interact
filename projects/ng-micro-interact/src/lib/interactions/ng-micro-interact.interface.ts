@@ -1,5 +1,5 @@
 import {ElementRef} from '@angular/core';
 
 export interface NgMicroInteract {
-  start(el: ElementRef, options);
+  start(el: ElementRef, options: KeyframeAnimationOptions);
 }

@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Blink implements NgMicroInteract {
 
-  keyframes = [
+  keyframes: Keyframe[] = [
     { transform: 'scale(1)'},
     { transform: 'scale(0.93)' },
     { transform: 'scale(0.95)' },
