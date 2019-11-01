@@ -8,6 +8,7 @@ export class NgMicroInteractDirective implements AfterViewInit {
 
   @Input() type;
   @Input() trigger = 'mouseover';
+  @Input() options;
 
   constructor(private el: ElementRef,
               private renderer: Renderer2) { }
@@ -18,7 +19,7 @@ export class NgMicroInteractDirective implements AfterViewInit {
 
   registerEventListeners() {
     this.renderer.listen(this.el.nativeElement, this.trigger, () => {
-      NgMicroInteractFactory.setInteraction(this.type, this.el);
+      NgMicroInteractFactory.setInteraction(this.type, this.el, this.options);
     });
   }
 

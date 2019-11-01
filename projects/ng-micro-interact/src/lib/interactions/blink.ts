@@ -1,6 +1,5 @@
 import { ElementRef } from '@angular/core';
 import { NgMicroInteract } from './ng-micro-interact.interface';
-import { duration } from '../consts';
 
 export class Blink implements NgMicroInteract {
 
@@ -11,7 +10,7 @@ export class Blink implements NgMicroInteract {
     { transform: 'scale(0.91)' },
     { transform: 'scale(1)' }];
 
-  start(elementRef: ElementRef) {
+  start(elementRef: ElementRef, { duration }) {
     elementRef.nativeElement.animate( this.keyframes, { duration });
   }
 }
