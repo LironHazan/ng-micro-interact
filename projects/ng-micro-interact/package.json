@@ -1,6 +1,22 @@
 {
   "name": "ng-micro-interact",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "description": "Micro Interaction Directive for Angular apps - based on native web animations and nothing more..",
+  "keywords": [
+    "animation",
+    "angular",
+    "web-animation",
+    "microinteractions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LironHazan/ng-micro-interact.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/LironHazan/ng-micro-interact.git#readme",
+  "bugs": {
+    "url": "https://github.com/LironHazan/ng-micro-interact/issues"
+  },
   "peerDependencies": {
     "@angular/common": "^8.0.3",
     "@angular/core": "^8.0.3"
