@@ -1,10 +1,12 @@
-[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.1&x2=0)](https://www.npmjs.com/package/@sentinel-one/s1-lottie)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/Sentinel-One/lottie/blob/master/LICENSE)
+[![npm version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=0.1&x2=0)](https://www.npmjs.com/package/ng-micro-interact)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/LironHazan/ng-micro-interactions/blob/master/LICENSE)
 
 
 # ng-micro-interact
 Tiny Angular lib for micro interactions using the modern [web animations](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) (experimental!) API.
 Inspired from [micronjs](https://webkul.github.io/micron/docs.html#!).
+
+[Hit The Demo](https://ng-micro-interact-demo.stackblitz.io/) 
 
 Using ng-micro-interact will give you:
 - Types.
@@ -14,13 +16,27 @@ Web Animation API It is one of the most performant ways to animate on the Web **
 
 Easily add micro interactions as follows:
 
-```html
-<div class="sq" ngMicroInteract 
-                [type]="'blink'" 
-                [options]="{ duration: 2000}" 
-                [trigger]="'mouseover'">  Blink!
- </div>`
- 
+`np i ng-micro-interact`
+
+```ts
+import { NgMicroInteractModule } from 'ng-micro-interact'
+import { AppComponent } from './app.component';
+
+@NgModule({
+  imports:      [ BrowserModule, FormsModule, NgMicroInteractModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
+})
+export class AppModule { }
+```
+
+```html 
+    <div class="sq" ngMicroInteract 
+                 [type]="'blink'" 
+                 [options]="{ duration: 2000}" 
+                 [trigger]="'mouseover'">  Blink! </div>
+```
+
 
 ## API:
 ### Inputs: 
@@ -46,4 +62,3 @@ Optional, string, Event name, if won't be specified the default be 'mouseover'
 
 #### [options]
 Optional, KeyframeAnimationOptions, if won't be specified the default be: { duration: 2000 }
-
