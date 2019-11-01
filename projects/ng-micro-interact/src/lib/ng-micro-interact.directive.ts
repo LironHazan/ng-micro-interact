@@ -6,7 +6,7 @@ import {NgMicroInteractFactory} from './ng-micro-interact-factory';
 })
 export class NgMicroInteractDirective implements AfterViewInit {
 
-  @Input() type;
+  @Input() type = 'fade';
   @Input() trigger = 'mouseover';
   @Input() options: KeyframeAnimationOptions;
 

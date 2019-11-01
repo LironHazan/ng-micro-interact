@@ -15,8 +15,35 @@ Web Animation API It is one of the most performant ways to animate on the Web **
 Easily add micro interactions as follows:
 
 ```html
-<div class="sq" ngMicroInteract [type]="'blink'" [trigger]="'mouseover'">
-   Blink!
+<div class="sq" ngMicroInteract 
+                [type]="'blink'" 
+                [options]="{ duration: 2000}" 
+                [trigger]="'mouseover'">  Blink!
  </div>`
  
+
+## API:
+### Inputs: 
+
+#### [type]
+Optional, string - if won't be specified the default be 'fade'
+Could be one of the following:
+    blink,
+    bounce,
+    fade,
+    flicker,
+    groove,
+    jelly,
+    jerk,
+    pop,
+    shake,
+    squeeze,
+    swing,
+    tada
+   
+#### [trigger]
+Optional, string, Event name, if won't be specified the default be 'mouseover'
+
+#### [options]
+Optional, KeyframeAnimationOptions, if won't be specified the default be: { duration: 2000 }
 
