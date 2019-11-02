@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Swing implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'rotateZ(0deg)' },
     {  transform: 'rotateZ(15deg)' },
     {  transform: 'rotateZ(-15deg)' },

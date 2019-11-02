@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Tada implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'scale(1)' },
     {  transform: 'scale(1.1) rotate(3deg)' },
     {  transform: 'scale(0.97)' },

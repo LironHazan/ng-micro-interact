@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Pop implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'scaleX(1) scaleY(1)' },
     {  transform: 'scaleX(1.35) scaleY(0.1)' },
     {  transform: 'scaleX(0.8) scaleY(1.7)' },

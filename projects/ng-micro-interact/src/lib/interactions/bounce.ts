@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Bounce implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'translate(0, 0)'},
     {  transform: 'translate(0, 3px)'},
     {  transform: 'translate(0, -6px)'},
