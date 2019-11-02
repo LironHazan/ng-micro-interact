@@ -14,51 +14,7 @@
 </section>
 
 <section class="interactions">
-  <div class="sq" ngMicroInteract [type]="'blink'" [trigger]="'mouseover'">
-    Blink!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'bounce'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Bounce!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'fade'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Fade!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'flicker'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Flicker!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'groove'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Groove!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'jelly'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Jelly!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'jerk'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Jerk!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'pop'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Pop!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'shake'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Shake!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'squeeze'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Squeeze!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'swing'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Swing!
-  </div>
-
-  <div class="sq" ngMicroInteract [type]="'tada'" [trigger]="'mouseover'" [options]="{ duration: 2000}">
-    Tada!
+  <div class="sq" *ngFor="let type of types" ngMicroInteract [type]="type" [trigger]="'mouseover'">
+    {{type | uppercase}}
   </div>
 </section>
