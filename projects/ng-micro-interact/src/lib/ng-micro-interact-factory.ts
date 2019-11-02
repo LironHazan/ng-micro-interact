@@ -32,6 +32,6 @@ const INTERACTION_TYPES: InteractionType = {
 export class NgMicroInteractFactory {
     static setInteraction(type: string, element: ElementRef, options: KeyframeAnimationOptions) {
       return new INTERACTION_TYPES[type]()
-        .start(element, { ...{ duration: defaultDuration }, ...options });
+        .start(element, { ...{ duration: defaultDuration, easing: 'cubic-bezier(0.25, 0.1, 0.25, 1.0)' }, ...options });
     }
 }
