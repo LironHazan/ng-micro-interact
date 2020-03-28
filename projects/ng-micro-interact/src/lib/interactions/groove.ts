@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Groove implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     { transform: 'skewY(0deg) rotate(0deg)'},
     { transform: 'skewY(-10deg) rotateZ(8deg)'},
     { transform: 'skewY(10deg) rotateZ(-8deg)'},

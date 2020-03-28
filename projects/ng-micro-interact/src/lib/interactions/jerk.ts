@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Jerk implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'translateX(0px) rotateZ(0deg)' },
     {  transform: 'translateX(-5px) rotateZ(-15deg)' },
     {  transform: 'translateX(5px) rotateZ(15deg)' },

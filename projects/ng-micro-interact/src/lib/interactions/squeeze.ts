@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Squeeze implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'scaleY(1)' },
     {  transform: 'scaleY(0.95)' },
     {  transform: 'scaleY(0.9)' },

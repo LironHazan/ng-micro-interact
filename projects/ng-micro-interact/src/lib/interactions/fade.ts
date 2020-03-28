@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Fade implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  opacity: '1'},
     {  opacity: '0.6'},
     {  opacity: '0.8'},

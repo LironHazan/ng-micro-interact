@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Jelly implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'scaleX(1)' },
     {  transform: 'scaleX(0.9)' },
     {  transform: 'scaleX(1.25)' },

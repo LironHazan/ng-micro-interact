@@ -3,7 +3,7 @@ import { NgMicroInteract } from './ng-micro-interact.interface';
 
 export class Shake implements NgMicroInteract {
 
-  keyframes: Keyframe[] = [
+  readonly keyframes: Keyframe[] = [
     {  transform: 'translateX(0px)' },
     {  transform: 'translateX(-3px)' },
     {  transform: 'translateX(3px)' },
