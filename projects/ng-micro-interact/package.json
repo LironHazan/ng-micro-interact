@@ -1,6 +1,6 @@
 {
   "name": "ng-micro-interact",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Micro Interaction Directive for Angular apps - based on native web animations and nothing more..",
   "keywords": [
     "animation",
