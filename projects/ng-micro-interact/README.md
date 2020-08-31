@@ -3,10 +3,11 @@
 
 
 # ng-micro-interact
-Tiny Angular lib for micro interactions using the modern [web animations](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) (experimental!) API.
-Inspired from [micronjs](https://webkul.github.io/micron/docs.html#!).
+Tiny Angular lib for micro interactions using the modern [web animations](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) API.
+Inspired by [micronjs](https://webkul.github.io/micron/docs.html#!).
 
-Supported on Angular 9 app as well! 
+
+![](captured.gif)
 
 [Hit The Demo](https://ng-micro-interact-demo.stackblitz.io/) 
 

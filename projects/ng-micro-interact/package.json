@@ -1,6 +1,6 @@
 {
   "name": "ng-micro-interact",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Micro Interaction Directive for Angular apps - based on native web animations and nothing more..",
   "keywords": [
     "animation",
@@ -18,7 +18,7 @@
     "url": "https://github.com/LironHazan/ng-micro-interact/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^8.0.3",
-    "@angular/core": "^8.0.3"
+    "@angular/common": ">=8.0.0",
+    "@angular/core": ">=8.0.0"
   }
 }
